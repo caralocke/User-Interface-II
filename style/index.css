@@ -1,1 +1,155 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	line-height: 1;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+*{
+    box-sizing:border-box;
+    border:0;
+    max-width:100%;
+    font-family: 'New Tegomin', serif;
+}
+/*General Styles*/
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:2rem;
+    line-height:1.5;
+    background-image: url('https://images.unsplash.com/photo-1508796079212-a4b83cbf734d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    color:white;
+}
+.header{
+    display:flex;
+    flex-direction:column;
+    padding:1%;    
+}
+
+h1 {
+    font-size:10rem;
+}
+h2{
+    padding:1%;
+    font-size:5rem;
+}
+nav{
+    width:25%;
+    display:flex;
+    flex-direction:row;
+    padding:0%;
+}
+nav a{
+    display:inline-block;
+    padding: 1% 0;
+    border-radius:0px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    text-decoration:none;
+    background-color:rgb(223, 92, 118);
+    border:1px solid black;
+}
+nav a:hover{
+    background:rgb(123, 178, 241);
+}
+.top {
+    display:flex;
+    width:100%;
+    height:20%;
+}
+.left{
+    justify-content:center;
+    display:flex;
+    width:100%;
+    padding:1%;
+}
+.left img{
+    max-width:60%;
+    max-height: 75%;
+}
+.right{
+    flex-direction:column;
+    width:50%;
+}
+.right nav a{
+    width:100%;
+    border-radius: 0px;
+    border:1px solid black;
+    padding:1%;
+}
+.right p{
+    padding:0%;
+    width:85%;
+}
+span {
+    font-weight: bold;
+}
+.image-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:.5%;
+    text-align: center;
+}
+.image{
+    width:23%;
+    height:23%;
+    padding:1%;
+}
+footer{
+    display:flex;
+    flex-flow: column wrap;
+    text-align:center;
+    
+}
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.footer nav a{
+    width: 100%;
+    padding:5%;
+    align-content: center;
+}
