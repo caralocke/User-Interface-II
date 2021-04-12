@@ -40,7 +40,7 @@ blockquote, q {
 	}
 *{
     box-sizing:border-box;
-    border:0;
+    border:1px solid grey;
     max-width:100%;
     font-family: 'New Tegomin', serif;
 }
@@ -94,34 +94,61 @@ nav a{
 nav a:hover{
     background:rgb(123, 178, 241);
 }
-.top {
+#top {
     display:flex;
     width:100%;
-    height:20%;
 }
 .left{
     justify-content:center;
+    align-items: center;
     display:flex;
-    width:100%;
+    width:40%;
     padding:1%;
 }
+#top .left{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#top .left div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .left img{
-    max-width:60%;
-    max-height: 75%;
+    width:100%;
+    justify-content: center;
 }
 .right{
-    flex-direction:column;
-    width:50%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    width: 40%;
+    padding:1%;
+}
+#top .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top .right div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.right nav{
+    width: 50%;
 }
 .right nav a{
     width:100%;
     border-radius: 0px;
     border:1px solid black;
+    text-align: center;
     padding:1%;
-}
-.right p{
-    padding:0%;
-    width:85%;
 }
 span {
     font-weight: bold;
@@ -146,10 +173,84 @@ footer{
 }
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.footer nav{
+    display:flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 .footer nav a{
     width: 100%;
-    padding:5%;
+    padding:2%;
     align-content: center;
+}
+/*Responsive Styles*/
+/*Break points*/
+/*
+max-width scales down, this is for desktop first design
+min-width scales up, this is for mobile first design
+*/
+/*tablet*/
+@media(max-width:800px) {    
+    header nav{
+        width:100%;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #top .left{
+        width: 50%;
+    }
+    #top .left div{
+        width:100%;
+    }
+    #top .right{
+        width: 50%;;
+    }
+    #top .right div{
+        width: 100%;
+    }
+    .footer nav{
+        justify-content: center;
+        align-items: center;
+    }
+} 
+@media(max-width:500px) {
+    header nav{
+        width:100%;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #top{
+        display: flex;
+        flex-direction: column;
+    }
+    #top .left{
+        width: 100%;
+    }
+    #top .left div{
+        width:100%;
+    }
+    #top .right{
+        width: 100%;;
+    }
+    #top .right div{
+        width: 100%;
+    }
+    .footer nav{
+        width: 100%;
+    }
+
 }
