@@ -40,7 +40,7 @@ blockquote, q {
 	}
 *{
     box-sizing:border-box;
-    border:1px solid grey;
+    border:0;
     max-width:100%;
     font-family: 'New Tegomin', serif;
 }
