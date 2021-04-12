@@ -74,6 +74,9 @@ h2{
     padding:1%;
     font-size:5rem;
 }
+h4{
+    padding: 1%;
+}
 nav{
     width:25%;
     display:flex;
@@ -160,7 +163,7 @@ span {
     padding:.5%;
     text-align: center;
 }
-.image{
+.image-container .image{
     width:23%;
     height:23%;
     padding:1%;
@@ -200,23 +203,36 @@ min-width scales up, this is for mobile first design
     header nav{
         width:100%;
     }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
     header{
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
+    #top {
+        display:flex;
+        flex-direction: column;
+    }
     #top .left{
-        width: 50%;
+        width: 80%;
+        margin: 0 auto;
     }
     #top .left div{
         width:100%;
     }
     #top .right{
-        width: 50%;;
+        width: 100%;
+        margin: 0 auto;
     }
     #top .right div{
         width: 100%;
+    }
+    .image-container .image{
+        width:50%;
     }
     .footer nav{
         justify-content: center;
@@ -248,6 +264,9 @@ min-width scales up, this is for mobile first design
     }
     #top .right div{
         width: 100%;
+    }
+    .image-container .image{
+        width:50%;
     }
     .footer nav{
         width: 100%;
