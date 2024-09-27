@@ -1,1 +1,275 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	line-height: 1;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+*{
+    box-sizing:border-box;
+    border:0;
+    max-width:100%;
+    font-family: 'New Tegomin', serif;
+}
+/*General Styles*/
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:2rem;
+    line-height:1.5;
+    background-image: url('https://images.unsplash.com/photo-1508796079212-a4b83cbf734d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    color:white;
+}
+.header{
+    display:flex;
+    flex-direction:column;
+    padding:1%;    
+}
+
+h1 {
+    font-size:10rem;
+}
+h2{
+    padding:1%;
+    font-size:5rem;
+}
+h4{
+    padding: 1%;
+}
+nav{
+    width:25%;
+    display:flex;
+    flex-direction:row;
+    padding:0%;
+}
+nav a{
+    display:inline-block;
+    padding: 1% 0;
+    border-radius:0px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    text-decoration:none;
+    background-color:rgb(223, 92, 118);
+    border:1px solid black;
+}
+nav a:hover{
+    background:rgb(123, 178, 241);
+}
+#top {
+    display:flex;
+    width:100%;
+}
+.left{
+    justify-content:center;
+    align-items: center;
+    display:flex;
+    width:40%;
+    padding:1%;
+}
+#top .left{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#top .left div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left img{
+    width:100%;
+    justify-content: center;
+}
+.right{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    width: 40%;
+    padding:1%;
+}
+#top .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top .right div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.right nav{
+    width: 50%;
+}
+.right nav a{
+    width:100%;
+    border-radius: 0px;
+    border:1px solid black;
+    text-align: center;
+    padding:1%;
+}
+span {
+    font-weight: bold;
+}
+.image-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:.5%;
+    text-align: center;
+}
+.image-container .image{
+    width:23%;
+    height:23%;
+    padding:1%;
+}
+footer{
+    display:flex;
+    flex-flow: column wrap;
+    text-align:center;
+    
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.footer nav{
+    display:flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.footer nav a{
+    width: 100%;
+    padding:2%;
+    align-content: center;
+}
+/*Responsive Styles*/
+/*Break points*/
+/*
+max-width scales down, this is for desktop first design
+min-width scales up, this is for mobile first design
+*/
+/*tablet*/
+@media(max-width:800px) {    
+    header nav{
+        width:100%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #top {
+        display:flex;
+        flex-direction: column;
+    }
+    #top .left{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #top .left div{
+        width:100%;
+    }
+    #top .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #top .right div{
+        width: 100%;
+    }
+    .image-container .image{
+        width:50%;
+    }
+    .footer nav{
+        justify-content: center;
+        align-items: center;
+    }
+} 
+@media(max-width:500px) {
+    header nav{
+        width:100%;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #top{
+        display: flex;
+        flex-direction: column;
+    }
+    #top .left{
+        width: 100%;
+    }
+    #top .left div{
+        width:100%;
+    }
+    #top .right{
+        width: 100%;;
+    }
+    #top .right div{
+        width: 100%;
+    }
+    .image-container .image{
+        width:50%;
+    }
+    .footer nav{
+        width: 100%;
+    }
+
+}
